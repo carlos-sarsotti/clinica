@@ -1,3 +1,4 @@
+<html>
 <?php
 require("Sajax.php");
 
@@ -85,7 +86,7 @@ $motivo=$_GET['motivo'];
 function olvidopass($msg)
 {
 
-$titulom = "Recordatorio de Contraseña";
+$titulom = "Recordatorio de ContraseÃ±a";
 
 include("conexion-cupea.php");
 $query =  "SELECT * FROM users WHERE email = '$msg' LIMIT 1" ;
@@ -187,11 +188,11 @@ window.open('login.php','_top');
 				<!-- Error Message -->
 				<div class="alert fade in alert-danger" style="display: none;">
 					<i class="icon-remove close" data-dismiss="alert"></i>
-					Ingrese el usuario y la contraseña.
+					Ingrese el usuario y la contraseÃ±a.
 				</div>
 
 <?php if ( $motivo == 1){	?><div class="alert fade in alert-danger" style="display: block;"><i class="icon-remove close" data-dismiss="alert"></i>Su email no esta registrado, debe crear una cuenta.</div><?php ;}; ?>
-<?php if ( $motivo == 2){	?><div class="alert fade in alert-danger" style="display: block;"><i class="icon-remove close" data-dismiss="alert"></i>Su contraseña es erronea</div><?php ;}; ?>
+<?php if ( $motivo == 2){	?><div class="alert fade in alert-danger" style="display: block;"><i class="icon-remove close" data-dismiss="alert"></i>Su contraseÃ±a es erronea</div><?php ;}; ?>
 				
 				<div class="form-group">
 					<div class="input-icon">
@@ -203,7 +204,7 @@ window.open('login.php','_top');
 					<!--<label for="password">Password:</label>-->
 					<div class="input-icon">
 						<i class="icon-lock"></i>
-						<input type="password" name="b2" class="form-control" placeholder="Contraseña" data-rule-required="true" data-msg-required="Por favor ingrese su Contraseña." />
+						<input type="password" name="b2" class="form-control" placeholder="ContraseÃ±a" data-rule-required="true" data-msg-required="Por favor ingrese su ContraseÃ±a." />
 					</div>
 				</div>
 				<!-- /Input Fields -->
@@ -242,7 +243,7 @@ window.open('login.php','_top');
 				<i class="icon-remove close hide-default"></i>
 
 				<!-- Link as Toggle Button -->
-				<a href="#" class="forgot-password-link">Olvidó su Contraseña?</a>
+				<a href="#" class="forgot-password-link">OlvidÃ³ su ContraseÃ±a?</a>
 
 				<!-- Forgot Password Formular -->
 				
@@ -259,7 +260,7 @@ if ( $motivo == 2 ){$hidepass = " " ;};
 						<!--<label for="email">Email:</label>-->
 						<div class="input-icon">
 							<i class="icon-envelope"></i>
-							<input type="text" name="emailolvido" class="form-control" placeholder="Ingrese su dirección de email" data-rule-required="true" data-rule-email="true" data-msg-required="Ingrese su dirección de email." />
+							<input type="text" name="emailolvido" class="form-control" placeholder="Ingrese su direcciÃ³n de email" data-rule-required="true" data-rule-email="true" data-msg-required="Ingrese su direcciÃ³n de email." />
 						</div>
 					</div>
 					<!-- /Input Fields -->
@@ -269,7 +270,7 @@ if ( $motivo == 2 ){$hidepass = " " ;};
 					
 					<br>
 					<!--<br>
-					<button type="button" class="btn btn-default btn-block" onclick="verdemo();">Ver demostración</button>
+					<button type="button" class="btn btn-default btn-block" onclick="verdemo();">Ver demostraciÃ³n</button>
 					-->
 					</div>
 					
